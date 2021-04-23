@@ -168,7 +168,7 @@ class App {
     }
     //Add new object to Workout array
     this.#workouts.push(workout);
-    console.log(workout);
+    //console.log(workout);
     // render workout on map
     this._renderWorkout(workout);
     this._hideForm();
@@ -248,7 +248,6 @@ class App {
     const workout = this.#workouts.find(
       work => work.id === workoutEl.dataset.id
     );
-    console.log(workout);
     this.#map.setView(workout.coords, this.#mapZoomLevel, {
       animate: true,
       pan: {
